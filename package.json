@@ -1,4 +1,5 @@
 {
+  "homepage" :"https://github.com/Ashwini114/infinite-scroll-with-lazy-loading-react.git",
   "name": "film-listing",
   "version": "0.1.0",
   "private": true,
