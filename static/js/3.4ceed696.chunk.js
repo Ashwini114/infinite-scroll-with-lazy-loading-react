@@ -1,0 +1,2 @@
+(this["webpackJsonpfilm-listing"]=this["webpackJsonpfilm-listing"]||[]).push([[3],{36:function(i,s,e){"use strict";e.r(s);var a=e(1),t=e.n(a);s.default=function(i){var s=i.img;return t.a.createElement("img",{src:"./assets/images/"+s,className:"img-fluid film-image",alt:"Responsive image"})}}}]);
+//# sourceMappingURL=3.4ceed696.chunk.js.map
