@@ -53,8 +53,30 @@ header{
 }
 .back-btn{
   float : left;
+  margin: 5px 10px;
 }
 .search-box{
   margin: 5px
+}
+.list-data{
+  text-align: left;
+  margin : 3%
+  
+}
+.film-image {
+  width: 100%;
+  
+}
+.zero-padding{
+  padding: 0px;
+}
+.list-container {
+  margin: 2px 17px;
+}
+.inline-display{
+  display: inline;
+}
+.title{
+  margin-left: -44%;
 }
 

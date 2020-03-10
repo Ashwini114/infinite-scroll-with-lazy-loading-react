@@ -5,7 +5,7 @@ const Image = React.lazy(() => import('./Image'));
 
 
 const ListItem = ({item}) =>{
-  return (<div >
+  return (<div  className="list-data">
       <Suspense fallback={<div><AiOutlineLoading3Quarters /></div>}><Image img={item.poster_image}/></Suspense>
      <p>{item.name}</p>
      </div>)

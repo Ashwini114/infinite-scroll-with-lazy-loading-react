@@ -78,11 +78,12 @@ const Home = ({list,searchItem}) =>{
      * Element list
      */
     const display_items = data.map((item,index)=>{
-       return(<Col key={index}><ListItem item={item} /></Col>)
+       return(<div key={index}><ListItem item={item} /></div>)
     });
     const searchRef = React.useRef()
     const search_bar = <input type="text" name="search"  placeholder="Search" ref={searchRef} className="search-box" onKeyUp={()=>handleKeyUp()}/>;
     const [search_status,changeSearchStatus] = useState(false);
+    const display_title = <span className="title">{list.page1.page.title}</span>;
     
     const handleKeyUp = () =>{
       if(searchRef.current.value.length > 3)
@@ -120,22 +121,24 @@ const Home = ({list,searchItem}) =>{
     return(
         <div>
         <header>
-            <h2>
+            <p>
                
                 <IoMdArrowRoundBack className="back-btn"/>
                 
-                {list.page1.page.title}
+                {(search_status)?search_bar:display_title}
+                
 
                 <FaSearch  className="search-btn" onClick={()=>showSearchBar()}/>
                 
 
-            </h2>
-            {(search_status)?search_bar:""}
+            </p>
+            
         </header>
-        
+        <div class="list-container">
         <Row xs="3">
         {display_items}
         </Row>
+        </div>
         <h1 ref={setElement}></h1>
         </div>
     )
